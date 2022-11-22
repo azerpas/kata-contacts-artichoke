@@ -54,7 +54,7 @@ System.out.format("Query took %f seconds\n", elapsed / 1000.0);
 ```
 
 * Create a table matching the size of the database with the duration of
-  the query (in milliseconds):
+  the query (in milliseconds) without adding the index:
 
 | size    | time (in ms) |
 |---------|--------------|
@@ -65,6 +65,18 @@ System.out.format("Query took %f seconds\n", elapsed / 1000.0);
 | 50,000  | 1259          |
 | 100,000 | 1963          |
 | 1M     | 17000          |
+
+The same table after creating the index :
+
+
+| size    | time (in ms) |
+|---------|--------------|
+| 10      | 2          |
+| 1000    | 22          |
+| 10,000  | 170          |
+| 50,000  |     790     |
+| 100,000 |    1580       |
+| 1M      |   15800        |
 
 
 
